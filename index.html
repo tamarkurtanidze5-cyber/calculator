@@ -1,16 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="calculator">
-        <h1>Calculator</h1>
+        <h1>Advanced Calculator</h1>
 
         <input type="number" id="num1" placeholder="First number">
+
         <input type="number" id="num2" placeholder="Second number">
 
         <div class="buttons">
@@ -18,11 +21,17 @@
             <button onclick="calculate('-')">-</button>
             <button onclick="calculate('*')">*</button>
             <button onclick="calculate('/')">/</button>
+            <button onclick="calculate('%')">%</button>
         </div>
 
+        <button class="clear" onclick="clearCalculator()">Clear</button>
+
         <h2 id="result">Result: 0</h2>
+
+        <p id="message"></p>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
